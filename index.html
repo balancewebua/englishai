@@ -570,6 +570,34 @@ body.modal-open .modern-nav {
             </div>
         </div>
 
+        <!-- Bottleneck -->
+        <div class="col-md-6 col-lg-4" id="bottleneck">
+            <div class="learning-card d-flex flex-column h-100" data-bs-toggle="modal" data-bs-target="#modalBottleneck">
+                <div class="card-icon"><i class="bi bi-filter-circle"></i></div>
+                <span class="text-primary fw-bold small mb-2">ТИЖДЕНЬ 6</span>
+                <h3 class="card-title h6 fw-bold">Bottleneck: твоя швидкість</h3>
+                <p class="text-muted small">Вчимося виявляти та усувати "вузькі місця" в системі, фокусуючись на оптимізації процесів, а не на пошуку винних.</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                    <span class="badge bg-light text-dark border" style="font-size: 0.7rem;">Відкрити урок</span>
+                    <i class="bi bi-arrow-right text-primary"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fee -->
+        <div class="col-md-6 col-lg-4" id="fee">
+            <div class="learning-card d-flex flex-column h-100" data-bs-toggle="modal" data-bs-target="#modalFee">
+                <div class="card-icon"><i class="bi bi-credit-card-2-front"></i></div>
+                <span class="text-primary fw-bold small mb-2">ТИЖДЕНЬ 7</span>
+                <h3 class="card-title h6 fw-bold">Fee: твоя прозорість</h3>
+                <p class="text-muted small">Вчимося обговорювати вартість та комісії професійно, будуючи довіру через чітку структуру ціноутворення.</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                    <span class="badge bg-light text-dark border" style="font-size: 0.7rem;">Відкрити урок</span>
+                    <i class="bi bi-arrow-right text-primary"></i>
+                </div>
+            </div>
+        </div>
+
         <!-- Feedback -->        
         <!-- <div class="col-md-6 col-lg-4" id="feedback">
             <div class="learning-card d-flex flex-column h-100" data-bs-toggle="modal" data-bs-target="#modalFeedback">
@@ -584,25 +612,13 @@ body.modal-open .modern-nav {
             </div>
         </div> -->
         
-        <!-- Bottleneck -->
-        <!-- <div class="col-md-6 col-lg-4" id="bottleneck">
-            <div class="learning-card d-flex flex-column h-100" data-bs-toggle="modal" data-bs-target="#modalBottleneck">
-                <div class="card-icon"><i class="bi bi-filter-circle"></i></div>
-                <span class="text-primary fw-bold small mb-2">ТИЖДЕНЬ 7</span>
-                <h3 class="card-title h6 fw-bold">Bottleneck: твоя швидкість</h3>
-                <p class="text-muted small">Вчимося виявляти та усувати "вузькі місця" в системі, фокусуючись на оптимізації процесів, а не на пошуку винних.</p>
-                <div class="mt-auto d-flex justify-content-between align-items-center">
-                    <span class="badge bg-light text-dark border" style="font-size: 0.7rem;">Відкрити урок</span>
-                    <i class="bi bi-arrow-right text-primary"></i>
-                </div>
-            </div>
-        </div> -->
+
 
         <!-- Soon -->
         <div class="col-md-6 col-lg-4">
             <div class="learning-card h-100 d-flex flex-column opacity-50 border-dashed" style="border-style: dashed;">
                 <div class="card-icon text-muted"><i class="bi bi-lock"></i></div>
-                <span class="text-muted fw-bold small mb-2">ТИЖДЕНЬ 6-50</span>
+                <span class="text-muted fw-bold small mb-2">ТИЖДЕНЬ 8-50</span>
                 <h3 class="card-title h6 fw-bold text-muted">Coming Soon...</h3>
                 <p class="text-muted small">Наступні модулі відкриваються щопонеділка.</p>
             </div>
@@ -768,13 +784,50 @@ footer {
     <!-- <div class="course-progress">
         <div class="progress-fill"></div>
     </div> -->
+    <!-- Тиждень n Feedback --> 
+    <div class="modal fade" id="modalFeedback" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow-lg" style="border-radius: 24px;">
+                <div class="modal-header border-0 p-4 mb-2">
+                    <h5 class="modal-title fw-bold"><i class="bi bi-chat-left-dots me-2"></i> Week 6: Feedback & Constructive Growth</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4 pt-0">
+                    <div class="mb-4">
+                        <span class="problem-tag mb-2 d-inline-block">PROBLEM</span>
+                        <p class="mt-2 fw-semibold">"It's bad." або "It's okay." (Абстрактна критика 🌫️)</p>
+                        <p class="">Неконкретний фідбек не дає інструкції до дії. Він або ображає, або залишає в ілюзії, що все ідеально, зупиняючи розвиток архітектури.</p>
+                    </div>
 
-    <!-- Тиждень 7 Bottleneck --> 
+                    <div class="mb-4">
+                        <span class="solution-tag mb-2 d-inline-block">THE SOLUTION</span>
+                        <p class="mt-2">Використання <strong>Second Conditional</strong> для делікатних пропозицій та техніка "Sandwich" (Похвала — Покращення — Похвала).</p>
+                    </div>
+
+                    <div class="architecture-block mb-4 rounded">
+                        <code>&lt;positive&gt;</code> I really appreciate the logic you've built here. <code>&lt;/positive&gt;</code><br><br>
+                        <code>&lt;suggestion&gt;</code> If we <strong>adjusted</strong> the layout, it <strong>would look</strong> even more professional. <code>&lt;/suggestion&gt;</code><br><br>
+                        <code>&lt;request&gt;</code> What do you think about this potential change? <code>&lt;/request&gt;</code>
+                    </div>
+
+                    <div class="alert alert-info border-0 bg-light">
+                        <strong>💡 Чому це працює:</strong> другий тип умовних речень (If + Past Simple, would + Verb) створює простір "гіпотетичної можливості". Ви не критикуєте помилку, а малюєте краще майбутнє. Це зберігає лояльність команди та клієнта.
+                    </div>
+
+                    <div class="text-end mt-4">
+                        <button class="btn btn-outline-primary btn-sm" data-bs-dismiss="modal">Закрити урок</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Тиждень 6 Bottleneck --> 
     <div class="modal fade" id="modalBottleneck" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content border-0 shadow-lg" style="border-radius: 24px;">
                 <div class="modal-header border-0 p-4 mb-2">
-                    <h5 class="modal-title fw-bold"><i class="bi bi-filter-circle me-2"></i> Week 7: Bottleneck & System Speed</h5>
+                    <h5 class="modal-title fw-bold"><i class="bi bi-filter-circle me-2"></i> Week 6: Bottleneck & System Speed</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body p-4 pt-0">
@@ -807,34 +860,34 @@ footer {
         </div>
     </div>
 
-    <!-- Тиждень 6 Feedback --> 
-    <div class="modal fade" id="modalFeedback" tabindex="-1" aria-hidden="true">
+    <!-- Тиждень 7 Fee -->
+    <div class="modal fade" id="modalFee" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content border-0 shadow-lg" style="border-radius: 24px;">
                 <div class="modal-header border-0 p-4 mb-2">
-                    <h5 class="modal-title fw-bold"><i class="bi bi-chat-left-dots me-2"></i> Week 6: Feedback & Constructive Growth</h5>
+                    <h5 class="modal-title fw-bold"><i class="bi bi-credit-card-2-front me-2"></i> Week 7: Fee & Financial Transparency</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body p-4 pt-0">
                     <div class="mb-4">
                         <span class="problem-tag mb-2 d-inline-block">PROBLEM</span>
-                        <p class="mt-2 fw-semibold">"It's bad." або "It's okay." (Абстрактна критика 🌫️)</p>
-                        <p class="">Неконкретний фідбек не дає інструкції до дії. Він або ображає, або залишає в ілюзії, що все ідеально, зупиняючи розвиток архітектури.</p>
+                        <p class="mt-2 fw-semibold">"It costs more" або "I need more money." (Непрофесійно ❌)</p>
+                        <p class="text-muted small">Нечіткість у фінансах створює підозру. Коли замовник не розуміє, за що він платить додатково, він починає сумніватися у Вашій чесності як партнера.</p>
                     </div>
 
                     <div class="mb-4">
                         <span class="solution-tag mb-2 d-inline-block">THE SOLUTION</span>
-                        <p class="mt-2">Використання <strong>Second Conditional</strong> для делікатних пропозицій та техніка "Sandwich" (Похвала — Покращення — Похвала).</p>
+                        <p class="mt-2">Використання правильних прийменників <strong>(Fee for / Charged by)</strong> та професійної термінології для пояснення прайсу.</p>
                     </div>
 
                     <div class="architecture-block mb-4 rounded">
-                        <code>&lt;positive&gt;</code> I really appreciate the logic you've built here. <code>&lt;/positive&gt;</code><br><br>
-                        <code>&lt;suggestion&gt;</code> If we <strong>adjusted</strong> the layout, it <strong>would look</strong> even more professional. <code>&lt;/suggestion&gt;</code><br><br>
-                        <code>&lt;request&gt;</code> What do you think about this potential change? <code>&lt;/request&gt;</code>
+                        <code>&lt;pricing&gt;</code> A standard <strong>service fee is applied</strong> to all AI audits. <code>&lt;/pricing&gt;</code><br><br>
+                        <code>&lt;terms&gt;</code> This transaction is <strong>charged by</strong> the provider directly. <code>&lt;/terms&gt;</code><br><br>
+                        <code>&lt;clarity&gt;</code> There is no additional <strong>fee for</strong> integration support. <code>&lt;/clarity&gt;</code>
                     </div>
 
                     <div class="alert alert-info border-0 bg-light">
-                        <strong>💡 Чому це працює:</strong> другий тип умовних речень (If + Past Simple, would + Verb) створює простір "гіпотетичної можливості". Ви не критикуєте помилку, а малюєте краще майбутнє. Це зберігає лояльність команди та клієнта.
+                        <strong>💡 Чому це працює:</strong> Чітка мова фінансів знімає емоційну напругу. Використання терміну "Fee" замість "Price" або "Cost" переводить розмову в площину ділового контракту, де кожна цифра обґрунтована архітектурою рішення.
                     </div>
 
                     <div class="text-end mt-4">
