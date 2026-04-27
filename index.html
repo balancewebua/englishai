@@ -356,6 +356,14 @@ document.addEventListener('click', (e) => {
         transform: translateY(0); /* Ефект натискання */
     }
 </style>
+<!-- <style>
+@media (max-width: 991px) {
+    #modules-buttons-container .btn {
+        width: 100%;
+        max-width: 280px; /* Встановіть комфортну ширину для обох кнопок */
+    }
+}
+</style> -->
 
 <section class="hero-section position-relative overflow-hidden" style="padding: 80px 0 100px 0; background: #0a0b10; color: white;">
     
@@ -386,13 +394,13 @@ document.addEventListener('click', (e) => {
                     Ламаємо скляну стелю між Вами та чеками у <strong>$</strong>. 
                     Від локального технічного фахівця — до  <strong>Global Pro & AI Solution</strong> професіонала через 50 тижнів стратегічної капіталізації Вашого авторитету.
                 </p>
-                
+
                 <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
                     <a class="btn px-4 py-2 fw-bold text-white btn-transform" href="#modules">
                         Розпочати трансформацію
                     </a>
                     <a class="btn btn-outline-light px-4 py-2" href="https://t.me/balancewebua" target="_blank" 
-                       style="border-radius: 10px; font-size: 0.95rem; border: 1px solid rgba(255,255,255,0.2);">
+                    style="border-radius: 10px; font-size: 0.95rem; border: 1px solid rgba(255,255,255,0.2);">
                         <i class="bi bi-telegram me-2"></i> Увійти в систему
                     </a>
                 </div>
@@ -490,7 +498,7 @@ body.modal-open .modern-nav {
         <h6 class="text-primary fw-bold text-uppercase mb-3" style="letter-spacing: 2px; font-size: 0.8rem;">
             The Curriculum
         </h6>
-        <h2 class="h4 fw-bold">Архітектура Вашої Капіталізації</h2>
+        <h2 class="h4 fw-bold">Архітектура вашої капіталізації</h2>
         <div class="mx-auto mt-3" style="width: 50px; height: 2px; background: #0d6efd;"></div>
     </div>
 
@@ -591,6 +599,20 @@ body.modal-open .modern-nav {
                 <span class="text-primary fw-bold small mb-2">ТИЖДЕНЬ 7</span>
                 <h3 class="card-title h6 fw-bold">Fee: твоя прозорість</h3>
                 <p class="text-muted small">Вчимося обговорювати вартість та комісії професійно, будуючи довіру через чітку структуру ціноутворення.</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                    <span class="badge bg-light text-dark border" style="font-size: 0.7rem;">Відкрити урок</span>
+                    <i class="bi bi-arrow-right text-primary"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Commute -->
+        <div class="col-md-6 col-lg-4" id="commute">
+            <div class="learning-card d-flex flex-column h-100" data-bs-toggle="modal" data-bs-target="#modalCommute">
+                <div class="card-icon"><i class="bi bi-signpost-split"></i></div>
+                <span class="text-primary fw-bold small mb-2">ТИЖДЕНЬ 8</span>
+                <h3 class="card-title h6 fw-bold">Commute: твій ресурс</h3>
+                <p class="text-muted small">Перетворюємо час у дорозі на час для навчання та вчимося аргументувати ефективність віддаленої роботи.</p>
                 <div class="mt-auto d-flex justify-content-between align-items-center">
                     <span class="badge bg-light text-dark border" style="font-size: 0.7rem;">Відкрити урок</span>
                     <i class="bi bi-arrow-right text-primary"></i>
@@ -784,6 +806,7 @@ footer {
     <!-- <div class="course-progress">
         <div class="progress-fill"></div>
     </div> -->
+    
     <!-- Тиждень n Feedback --> 
     <div class="modal fade" id="modalFeedback" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -822,34 +845,34 @@ footer {
         </div>
     </div>
 
-    <!-- Тиждень 6 Bottleneck --> 
-    <div class="modal fade" id="modalBottleneck" tabindex="-1" aria-hidden="true">
+    <!-- Тиждень 8 Commute -->    
+    <div class="modal fade" id="modalCommute" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content border-0 shadow-lg" style="border-radius: 24px;">
                 <div class="modal-header border-0 p-4 mb-2">
-                    <h5 class="modal-title fw-bold"><i class="bi bi-filter-circle me-2"></i> Week 6: Bottleneck & System Speed</h5>
+                    <h5 class="modal-title fw-bold"><i class="bi bi-signpost-split me-2"></i> Week 8: Commute & Efficiency</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body p-4 pt-0">
                     <div class="mb-4">
                         <span class="problem-tag mb-2 d-inline-block">PROBLEM</span>
-                        <p class="mt-2 fw-semibold">"You are slow" або "It's your fault" (Звинувачення ❌)</p>
-                        <p class="">Особисті звинувачення створюють конфлікти, але не вирішують проблему. Затримка — це завжди наслідок недосконалої архітектури процесу.</p>
+                        <p class="mt-2 fw-semibold">"I go to work by bus." (Побутовий опис 🚌)</p>
+                        <p class="text-muted small">Для фрілансера час — це найдорожчий актив. Побутовий опис поїздок не несе цінності. Клієнт має бачити, що ви інвестуєте свій час у продуктивність, а не в логістику.</p>
                     </div>
 
                     <div class="mb-4">
                         <span class="solution-tag mb-2 d-inline-block">THE SOLUTION</span>
-                        <p class="mt-2">Використання терміну <strong>"Bottleneck"</strong> та опис причин через зв'язки <strong>Due to / Because of</strong>.</p>
+                        <p class="mt-2">Використання <strong>Gerund vs Infinitive</strong> для опису звичок та аргументації віддаленої роботи.</p>
                     </div>
 
                     <div class="architecture-block mb-4 rounded">
-                        <code>&lt;identifying&gt;</code> We have a <strong>bottleneck</strong> in the approval stage. <code>&lt;/identifying&gt;</code><br><br>
-                        <code>&lt;reasoning&gt;</code> The delay is <strong>due to</strong> a high volume of requests. <code>&lt;/reasoning&gt;</code><br><br>
-                        <code>&lt;optimization&gt;</code> We <strong>should automate</strong> this step to speed up the flow. <code>&lt;/optimization&gt;</code>
+                        <code>&lt;efficiency&gt;</code> My <strong>commute time is replaced by</strong> deep work sessions. <code>&lt;/efficiency&gt;</code><br><br>
+                        <code>&lt;habit&gt;</code> I enjoy <strong>listening to</strong> professional podcasts while moving. <code>&lt;/habit&gt;</code><br><br>
+                        <code>&lt;remote_benefit&gt;</code> Working remotely allows me <strong>to focus</strong> on delivery. <code>&lt;/remote_benefit&gt;</code>
                     </div>
 
                     <div class="alert alert-info border-0 bg-light">
-                        <strong>💡 Чому це працює:</strong> коли ви називаєте проблему "затором" (Bottleneck), ви виводите людину з-під удару і спрямовуєте увагу на систему. Це мова senior-менеджменту, де мета — не покарати, а прискорити результат.
+                        <strong>💡 Чому це працює:</strong> Коли ви замінюєте "я їду" на "мій час замінений на роботу", ви транслюєте образ максимально ефективного фахівця. Це показує замовнику, що кожна хвилина вашого дня працює на результат проекту.
                     </div>
 
                     <div class="text-end mt-4">
@@ -888,6 +911,44 @@ footer {
 
                     <div class="alert alert-info border-0 bg-light">
                         <strong>💡 Чому це працює:</strong> Чітка мова фінансів знімає емоційну напругу. Використання терміну "Fee" замість "Price" або "Cost" переводить розмову в площину ділового контракту, де кожна цифра обґрунтована архітектурою рішення.
+                    </div>
+
+                    <div class="text-end mt-4">
+                        <button class="btn btn-outline-primary btn-sm" data-bs-dismiss="modal">Закрити урок</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Тиждень 6 Bottleneck --> 
+    <div class="modal fade" id="modalBottleneck" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow-lg" style="border-radius: 24px;">
+                <div class="modal-header border-0 p-4 mb-2">
+                    <h5 class="modal-title fw-bold"><i class="bi bi-filter-circle me-2"></i> Week 6: Bottleneck & System Speed</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4 pt-0">
+                    <div class="mb-4">
+                        <span class="problem-tag mb-2 d-inline-block">PROBLEM</span>
+                        <p class="mt-2 fw-semibold">"You are slow" або "It's your fault" (Звинувачення ❌)</p>
+                        <p class="">Особисті звинувачення створюють конфлікти, але не вирішують проблему. Затримка — це завжди наслідок недосконалої архітектури процесу.</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <span class="solution-tag mb-2 d-inline-block">THE SOLUTION</span>
+                        <p class="mt-2">Використання терміну <strong>"Bottleneck"</strong> та опис причин через зв'язки <strong>Due to / Because of</strong>.</p>
+                    </div>
+
+                    <div class="architecture-block mb-4 rounded">
+                        <code>&lt;identifying&gt;</code> We have a <strong>bottleneck</strong> in the approval stage. <code>&lt;/identifying&gt;</code><br><br>
+                        <code>&lt;reasoning&gt;</code> The delay is <strong>due to</strong> a high volume of requests. <code>&lt;/reasoning&gt;</code><br><br>
+                        <code>&lt;optimization&gt;</code> We <strong>should automate</strong> this step to speed up the flow. <code>&lt;/optimization&gt;</code>
+                    </div>
+
+                    <div class="alert alert-info border-0 bg-light">
+                        <strong>💡 Чому це працює:</strong> коли ви називаєте проблему "затором" (Bottleneck), ви виводите людину з-під удару і спрямовуєте увагу на систему. Це мова senior-менеджменту, де мета — не покарати, а прискорити результат.
                     </div>
 
                     <div class="text-end mt-4">
