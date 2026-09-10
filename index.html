@@ -688,6 +688,7 @@ body.modal-open .modern-nav {
             </div>
         </div>
 
+        <!-- Value: ваша цінність -->
         <div class="col-md-6 col-lg-4" id="value">
             <div class="learning-card d-flex flex-column h-100" data-bs-toggle="modal" data-bs-target="#modalValue">
                 <div class="card-icon"><i class="bi bi-gem"></i></div>
@@ -701,6 +702,7 @@ body.modal-open .modern-nav {
             </div>
         </div>
 
+        <!-- Refund: ваші гарантії -->
         <div class="col-md-6 col-lg-4" id="refund">
             <div class="learning-card d-flex flex-column h-100" data-bs-toggle="modal" data-bs-target="#modalRefund">
                 <div class="card-icon"><i class="bi bi-arrow-counterclockwise"></i></div>
@@ -713,12 +715,26 @@ body.modal-open .modern-nav {
                 </div>
             </div>
         </div>
+
+        <!-- Тиждень 15: Availability -->
+        <div class="col-md-6 col-lg-4" id="availability">
+            <div class="learning-card d-flex flex-column h-100" data-bs-toggle="modal" data-bs-target="#modalAvailability">
+                <div class="card-icon"><i class="bi bi-calendar-event"></i></div>
+                <span class="text-primary fw-bold small mb-2">ТИЖДЕНЬ 15</span>
+                <h3 class="card-title h6 fw-bold">Availability: ваш графік</h3>
+                <p class="text-muted small">Вчимося встановлювати межі власного часу, обговорювати розклад і захищати вихідні без образи для замовника.</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                    <span class="badge bg-light text-dark border" style="font-size: 0.7rem;">Відкрити урок</span>
+                    <i class="bi bi-arrow-right text-primary"></i>
+                </div>
+            </div>
+        </div>
         
         <!-- Soon -->
         <div class="col-md-6 col-lg-4">
             <div class="learning-card h-100 d-flex flex-column opacity-50 border-dashed" style="border-style: dashed;">
                 <div class="card-icon text-muted"><i class="bi bi-lock"></i></div>
-                <span class="text-muted fw-bold small mb-2">ТИЖДЕНЬ 15-50</span>
+                <span class="text-muted fw-bold small mb-2">ТИЖДЕНЬ 16-50</span>
                 <h3 class="card-title h6 fw-bold text-muted">Coming Soon...</h3>
                 <p class="text-muted small">Наступні модулі відкриваються щопонеділка.</p>
             </div>
@@ -884,7 +900,45 @@ footer {
     <!-- <div class="course-progress">
         <div class="progress-fill"></div>
     </div> -->
-    
+  
+    <!-- Тиждень 15: Availability -->
+    <div class="modal fade" id="modalAvailability" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow-lg" style="border-radius: 24px;">
+                <div class="modal-header border-0 p-4 mb-2">
+                    <h5 class="modal-title fw-bold"><i class="bi bi-calendar-event me-2"></i> Week 15: Availability & Boundary Setting</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4 pt-0">
+                    <div class="mb-4">
+                        <span class="problem-tag mb-2 d-inline-block">PROBLEM</span>
+                        <p class="mt-2 fw-semibold">"Write me anytime." (Позиція жертви ❌)</p>
+                        <p class="text-muted small">Готовність бути на зв'язку цілодобово знецінює ваш час. Клієнт починає сприймати ваші особисті кордони як щось необов'язкове, що призводить до вигорання та хаосу в комунікації.</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <span class="solution-tag mb-2 d-inline-block">THE SOLUTION</span>
+                        <p class="mt-2">Застосування <strong>Present Continuous (для планів на майбутнє)</strong> для чіткого окреслення графіку та доступності ресурсів.</p>
+                    </div>
+
+                    <div class="architecture-block mb-4 rounded">
+                        <code>&lt;schedule&gt;</code> My current <strong>availability is starting</strong> next Monday. <code>&lt;/schedule&gt;</code><br><br>
+                        <code>&lt;boundaries&gt;</code> I <strong>am taking</strong> the weekend off to reset, but I'll review this first thing Monday. <code>&lt;/boundaries&gt;</code><br><br>
+                        <code>&lt;scaling&gt;</code> Our team <strong>is scaling</strong> the architecture slots for the upcoming sprint. <code>&lt;/scaling&gt;</code>
+                    </div>
+
+                    <div class="alert alert-info border-0 bg-light">
+                        <strong>💡 Чому це працює:</strong> Ваша доступність має бути привілеєм, а не базовим очікуванням. Використання структурованих часових форм демонструє, що ваш час чітко спланований, і це змушує замовника поважати ваші графіки та робочий ресурс.
+                    </div>
+
+                    <div class="text-end mt-4">
+                        <button class="btn btn-outline-primary btn-sm" data-bs-dismiss="modal">Закрити урок</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
     <!-- Week 10: Networking & Authority -->
     <div class="modal fade" id="modalNetworking" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -919,6 +973,7 @@ footer {
         </div>
     </div>
 
+    <!-- Week 11: Invoice & Money Talk -->
     <div class="modal fade" id="modalInvoice" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content border-0 shadow-lg" style="border-radius: 24px;">
@@ -952,6 +1007,7 @@ footer {
         </div>
     </div>
 
+    <!-- Week 12: Deadline & Risk Control -->
     <div class="modal fade" id="modalDeadline" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content border-0 shadow-lg" style="border-radius: 24px;">
@@ -985,6 +1041,7 @@ footer {
         </div>
     </div>
 
+    <!-- Week 13: Value & ROI Focus< -->
     <div class="modal fade" id="modalValue" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content border-0 shadow-lg" style="border-radius: 24px;">
@@ -1018,6 +1075,7 @@ footer {
         </div>
     </div>
 
+    <!-- Week 14: Refund & Conflict Resolution -->
     <div class="modal fade" id="modalRefund" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content border-0 shadow-lg" style="border-radius: 24px;">
